@@ -8,7 +8,7 @@
 [![Android](https://img.shields.io/badge/Android-planned-3ddc84.svg?logo=android)](#)
 [![React Native](https://img.shields.io/badge/React%20Native-0.76-61dafb.svg?logo=react)](#)
 [![TensorFlow Lite](https://img.shields.io/badge/TensorFlow%20Lite-on--device-ff6f00.svg?logo=tensorflow)](#)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#-contributing)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 
 ScamReaper listens to the transcript of a call, runs it through a TensorFlow
 Lite model that lives entirely on your phone, and tells you whether the caller
@@ -24,7 +24,7 @@ No accounts. No cloud. No ads. No tracking. No subscriptions. **Ever.**
 
 | Home | Call Detail | Stats | Security |
 |------|-------------|-------|----------|
-| ![home](./docs/screenshots/home.png) | ![detail](./docs/screenshots/detail.png) | ![stats](./docs/screenshots/stats.png) | ![security](./docs/screenshots/security.png) |
+| ![home](./screenshots/home.png) | ![detail](./screenshots/detail.png) | ![stats](./screenshots/stats.png) | ![security](./screenshots/security.png) |
 
 ---
 
@@ -160,14 +160,14 @@ Outputs:
 
 **Training tips**
 - Keep `RED` examples diverse — include IRS scams, fake bank fraud, tech support, lottery, romance, and "you owe us money" variants.
-- Balance the classes — roughly 40% RED, 40% GREEN, 20% YELLOW works well.
+- Balance the classes — 40% RED, 40% GREEN, 20% YELLOW works well.
 - Test on your own examples before committing. The toy dataset is intentionally tiny.
 
 ---
 
 ## 🤝 Contributing
 
-Pull requests are welcome. See [CONTRIBUTING.md](./CONTRIBUTING.md) for details. A few principles:
+Pull requests are welcome. See [CONTRIBUTING.md](../CONTRIBUTING.md) for details. A few principles:
 
 1. **No network calls for anything related to screening.** The privacy promise is load-bearing.
 2. **No third-party analytics or ad SDKs. Ever.**
@@ -181,9 +181,9 @@ Run `npx tsc --noEmit` before opening a PR.
 ## 🛡 Reporting a security issue
 
 **Please do not open a public GitHub issue for security bugs.** Use the
-[Security Vulnerability template](./.github/ISSUE_TEMPLATE/security_vulnerability.md)
+[Security Vulnerability template](../.github/ISSUE_TEMPLATE/security_vulnerability.md)
 to open a **GitHub Security Advisory** instead, or email the address
-configured on the repo. See [docs/SECURITY.md](./docs/SECURITY.md) for the full
+configured on the repo. See [SECURITY.md](./SECURITY.md) for the full
 process and SLA.
 
 ---
@@ -207,4 +207,4 @@ have seen. Everything contributed stays on-device, forever free.
 
 ## 📜 License
 
-MIT — see [LICENSE](./LICENSE). Copyright © 2026 ScamReaper Contributors.
+MIT — see [LICENSE](../LICENSE). Copyright © 2026 ScamReaper Contributors.

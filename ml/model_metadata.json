@@ -1,0 +1,19 @@
+{
+  "inputShape": [
+    1,
+    162
+  ],
+  "inputDtype": "float32",
+  "outputShape": [
+    1,
+    3
+  ],
+  "outputDtype": "float32",
+  "classes": [
+    "RED",
+    "GREEN",
+    "YELLOW"
+  ],
+  "confidenceThreshold": 0.7,
+  "vocabSize": 162
+}

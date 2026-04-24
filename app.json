@@ -9,7 +9,13 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.scamreaper.app",
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "ScamReaper needs microphone access only if AI Voice responses are enabled, so the on-device AI can speak to callers.",
+        "NSUserNotificationUsageDescription": "ScamReaper notifies you when a call is screened and classified so you can decide to accept, block, or call back.",
+        "NSContactsUsageDescription": "ScamReaper optionally checks your contacts locally to mark known numbers as legitimate. Contact data never leaves your device."
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -19,7 +25,13 @@
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.scamreaper.app",
+      "permissions": [
+        "android.permission.POST_NOTIFICATIONS",
+        "android.permission.READ_PHONE_STATE",
+        "android.permission.ANSWER_PHONE_CALLS"
+      ]
     },
     "web": {
       "output": "static",
@@ -33,9 +45,9 @@
           "image": "./assets/images/splash-icon.png",
           "imageWidth": 200,
           "resizeMode": "contain",
-          "backgroundColor": "#ffffff",
+          "backgroundColor": "#0a0a0a",
           "dark": {
-            "backgroundColor": "#000000"
+            "backgroundColor": "#0a0a0a"
           }
         }
       ]

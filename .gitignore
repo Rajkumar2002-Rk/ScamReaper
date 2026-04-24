@@ -1,43 +1,84 @@
-# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+# ScamReaper — .gitignore
 
-# dependencies
+# ── Node / JS ─────────────────────────────────────────────
 node_modules/
-
-# Expo
-.expo/
-dist/
-web-build/
-expo-env.d.ts
-
-# Native
-.kotlin/
-*.orig.*
-*.jks
-*.p8
-*.p12
-*.key
-*.mobileprovision
-
-# Metro
-.metro-health-check*
-
-# debug
 npm-debug.*
 yarn-debug.*
 yarn-error.*
+.metro-health-check*
 
-# macOS
-.DS_Store
+# ── Expo ──────────────────────────────────────────────────
+.expo/
+.expo-shared/
+web-build/
+dist/
+expo-env.d.ts
+
+# ── iOS build artifacts ───────────────────────────────────
+ios/build/
+ios/Pods/
+ios/DerivedData/
+ios/*.xcworkspace/xcuserdata/
+ios/*.xcodeproj/xcuserdata/
+ios/*.xcodeproj/project.xcworkspace/xcuserdata/
+
+# ── Android build artifacts ───────────────────────────────
+android/build/
+android/app/build/
+android/.gradle/
+android/local.properties
+
+# ── ML training ───────────────────────────────────────────
+ml/__pycache__/
+ml/.venv/
+ml/venv/
+ml/env/
+
+# Trained model — regenerate with `python ml/train_model.py`
+*.tflite
+
+# ── Python ────────────────────────────────────────────────
+*.pyc
+*.pyo
+__pycache__/
+*.egg-info/
+.pytest_cache/
+
+# ── Builds / bundles ──────────────────────────────────────
+build/
+out/
+*.app
+*.ipa
+*.apk
+*.aab
+
+# ── Signing / secrets ─────────────────────────────────────
 *.pem
+*.p8
+*.p12
+*.key
+*.jks
+*.keystore
+*.mobileprovision
+.env
+.env.*
+.env.*.local
 
-# local env files
-.env*.local
+# ── Editor / OS junk ──────────────────────────────────────
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+*.orig.*
+Thumbs.db
 
-# typescript
+# ── TypeScript ────────────────────────────────────────────
 *.tsbuildinfo
 
-app-example
+# ── Logs ──────────────────────────────────────────────────
+*.log
+logs/
 
-# generated native folders
-/ios
-/android
+# ── Misc Expo ─────────────────────────────────────────────
+app-example
