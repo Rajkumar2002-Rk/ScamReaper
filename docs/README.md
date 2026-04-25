@@ -18,6 +18,33 @@ No accounts. No cloud. No ads. No tracking. No subscriptions. **Ever.**
 
 ---
 
+## 🚧 Current status
+
+> ⚠️ **This project is under active development.**
+> It is **NOT** yet available on the App Store or Google Play Store.
+
+**What exists today:**
+- ✅ Complete UI built and running on simulator
+- ✅ TFLite AI model trained locally
+- ✅ iOS 26 Call Screening integration coded
+- 🛠 Android live call monitoring in development
+- ✅ Security system implemented
+
+**What still needs to happen:**
+- 🔑 Apple Developer Account for real device testing
+- 📱 Real device testing on iPhone with iOS 26
+- 🔗 Native CallKit extension proper linking
+- 🤖 Android build and testing
+- 🚀 App Store and Play Store submission
+
+**Platform plans:**
+- **iOS:** Pre-call screening using iOS 26
+- **Android:** Full live call monitoring during calls (Android gives more system-level access)
+
+If you want to help get this to a shippable v1.0, see [Contributing](#-contributing). Real-device testers and Android engineers especially welcome.
+
+---
+
 ## 📸 Screenshots
 
 > _Real screenshots coming soon. Placeholders below._
